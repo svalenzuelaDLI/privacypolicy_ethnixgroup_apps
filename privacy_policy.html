@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Ethnix Group</title>
+<meta name="description" content="Privacy policies for mobile applications by Ethnix Group LLC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #00031a;
+    --navy: #002333;
+    --navy-deep: #003049;
+    --orange: #ec7700;
+    --orange-soft: #ee7623;
+    --cream: #f1efeb;
+    --gray: #6d6d6d;
+    --line: #dadada;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .hidden { display: none !important; }
+
+  /* Top bar */
+  .topbar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .topbar svg { height: 44px; width: auto; display: block; }
+  .topbar a.site-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .topbar a.site-link:hover { color: var(--orange); }
+
+  /* Hero */
+  .hero { background: var(--navy); color: #ffffff; }
+  .hero-inner { max-width: 960px; margin: 0 auto; padding: 56px 24px 48px; }
+  .eyebrow {
+    display: inline-block;
+    color: var(--orange-soft);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    margin: 0 0 10px;
+    font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .hero .meta { color: #b9c6cd; font-size: 0.95rem; }
+  .hero .meta strong { color: #ffffff; font-weight: 600; }
+
+  /* Layout */
+  .page { max-width: 960px; margin: 0 auto; padding: 40px 24px 72px; }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 44px;
+    box-shadow: 0 2px 16px rgba(0, 3, 26, 0.06);
+  }
+  @media (max-width: 640px) {
+    .card { padding: 28px 22px; border-radius: 12px; }
+  }
+
+  /* App selector (index view) */
+  .app-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  a.app-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--cream);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 400;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  a.app-card:hover {
+    border-color: var(--orange);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 3, 26, 0.08);
+    text-decoration: none;
+  }
+  .app-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0, 3, 26, 0.18);
+  }
+  /* MyEthnix app icon (assets/iconapp/IconX_ios.png, 160px, embedded) */
+  .app-icon--myethnix {
+    background-image: url("data:image/png;base64,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");
+  }
+  .app-card .app-name {
+    display: block;
+    color: var(--navy-deep);
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+  .app-card .app-desc {
+    display: block;
+    color: var(--gray);
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin-top: 2px;
+  }
+  .app-card .chevron { margin-left: auto; color: var(--orange); font-size: 1.2rem; }
+
+  /* Policy header with app icon */
+  .policy-head {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+  .policy-head .app-icon { width: 68px; height: 68px; border-radius: 15px; }
+  .policy-head .policy-title { margin: 0 0 2px; }
+  .policy-head .policy-date { margin: 0; }
+
+  /* Back link */
+  a.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+    font-size: 0.92rem;
+  }
+
+  /* At a glance */
+  .glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 0 0 40px;
+  }
+  .glance div {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .glance strong {
+    display: block;
+    color: var(--navy-deep);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  /* Sections */
+  .policy-title {
+    color: var(--navy-deep);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+  }
+  .policy-date { color: var(--gray); font-size: 0.92rem; margin: 0 0 28px; }
+  h2 {
+    color: var(--navy-deep);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 42px 0 12px;
+    padding-top: 26px;
+    border-top: 1px solid #edebeb;
+  }
+  h2 .num { color: var(--orange); font-weight: 700; margin-right: 8px; }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--orange); }
+  strong { font-weight: 600; }
+  a { color: var(--orange); text-decoration: none; font-weight: 500; }
+  a:hover { text-decoration: underline; }
+
+  .contact-box {
+    background: var(--cream);
+    border-left: 4px solid var(--orange);
+    border-radius: 0 12px 12px 0;
+    padding: 18px 22px;
+    margin-top: 6px;
+  }
+  .contact-box p { margin: 0; }
+
+  /* Footer */
+  footer { background: var(--ink); color: #9aa3b2; }
+  .footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 28px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.88rem;
+  }
+  footer a { color: #ffffff; font-weight: 500; }
+  footer a:hover { color: var(--orange-soft); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="https://ethnixgroup.com/" aria-label="Ethnix Group">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 170.81" role="img" aria-label="Ethnix Group logo">
+        <path fill="#101418" d="M244.9,135.07h2.5v9.41c-1.15,1.01-2.51,1.79-4.09,2.33-1.57.54-3.23.81-4.97.81-2.47,0-4.69-.54-6.66-1.62-1.97-1.08-3.52-2.58-4.65-4.49-1.13-1.91-1.69-4.06-1.69-6.43s.56-4.52,1.69-6.43c1.13-1.91,2.68-3.41,4.65-4.49,1.97-1.08,4.2-1.62,6.69-1.62,1.88,0,3.61.3,5.18.9,1.57.6,2.9,1.49,3.98,2.66l-1.62,1.66c-1.95-1.93-4.43-2.89-7.43-2.89-2,0-3.8.44-5.41,1.32-1.61.88-2.87,2.1-3.79,3.67-.92,1.56-1.37,3.31-1.37,5.23s.46,3.67,1.37,5.21c.92,1.55,2.17,2.77,3.77,3.66,1.6.89,3.39,1.34,5.39,1.34,2.54,0,4.69-.63,6.45-1.9v-8.32Z"/>
+        <path fill="#101418" d="M278.65,147.4l-5.64-7.93c-.63.07-1.29.11-1.97.11h-6.62v7.82h-2.61v-24.66h9.23c3.15,0,5.61.75,7.4,2.26,1.78,1.5,2.68,3.57,2.68,6.2,0,1.93-.49,3.55-1.46,4.88-.97,1.33-2.37,2.28-4.17,2.87l6.02,8.46h-2.85ZM276.57,135.74c1.29-1.08,1.94-2.6,1.94-4.54s-.65-3.53-1.94-4.6c-1.29-1.07-3.16-1.6-5.6-1.6h-6.55v12.37h6.55c2.44,0,4.31-.54,5.6-1.62"/>
+        <path fill="#101418" d="M298.47,145.97c-1.99-1.09-3.54-2.59-4.65-4.49s-1.67-4.04-1.67-6.41.56-4.51,1.67-6.41,2.67-3.4,4.65-4.49c1.98-1.09,4.2-1.64,6.64-1.64s4.64.54,6.61,1.62c1.96,1.08,3.51,2.58,4.63,4.49,1.13,1.91,1.69,4.06,1.69,6.43s-.56,4.52-1.69,6.43c-1.13,1.91-2.67,3.41-4.63,4.49-1.96,1.08-4.16,1.62-6.61,1.62s-4.66-.55-6.64-1.64M310.4,143.97c1.57-.88,2.81-2.1,3.7-3.66.89-1.56,1.34-3.31,1.34-5.23s-.45-3.67-1.34-5.23c-.89-1.56-2.13-2.78-3.7-3.67-1.57-.88-3.34-1.32-5.29-1.32s-3.72.44-5.3,1.32c-1.59.88-2.83,2.1-3.74,3.67-.9,1.56-1.36,3.31-1.36,5.23s.45,3.67,1.36,5.23c.9,1.56,2.15,2.78,3.74,3.66,1.59.88,3.35,1.32,5.3,1.32s3.71-.44,5.29-1.32"/>
+        <path fill="#101418" d="M333.41,144.87c-1.79-1.83-2.68-4.5-2.68-8v-14.13h2.61v14.02c0,2.87.65,5,1.94,6.41,1.29,1.41,3.16,2.11,5.6,2.11s4.35-.71,5.64-2.11c1.29-1.41,1.94-3.55,1.94-6.41v-14.02h2.54v14.13c0,3.5-.89,6.17-2.66,8-1.77,1.83-4.26,2.75-7.45,2.75s-5.68-.92-7.47-2.75"/>
+        <path fill="#101418" d="M382.52,124.99c1.79,1.5,2.68,3.57,2.68,6.2s-.89,4.69-2.68,6.18c-1.79,1.49-4.25,2.24-7.4,2.24h-6.62v7.79h-2.61v-24.66h9.23c3.15,0,5.61.75,7.4,2.25M380.66,135.72c1.29-1.07,1.94-2.58,1.94-4.53s-.65-3.53-1.94-4.6c-1.29-1.07-3.16-1.6-5.6-1.6h-6.55v12.33h6.55c2.44,0,4.31-.53,5.6-1.6"/>
+        <rect fill="#12284c" x="24.22" y="122.53" width="39.11" height="25.02"/>
+        <rect fill="#d7282f" x="63.33" y="122.53" width="38.46" height="25.02"/>
+        <rect fill="#ec7700" x="101.79" y="122.53" width="38.46" height="25.02"/>
+        <rect fill="#f3bd48" x="140.25" y="122.53" width="38.46" height="25.02"/>
+        <rect fill="#f1e4b2" x="178.71" y="122.53" width="38.46" height="25.02"/>
+        <polygon fill="#12284c" points="90.02 95.22 90.02 115.4 24.05 115.4 24.05 36.04 88.55 36.04 88.55 56.22 50.35 56.22 50.35 65.52 83.9 65.52 83.9 84.79 50.35 84.79 50.35 95.22 90.02 95.22"/>
+        <polygon fill="#12284c" points="117.57 56.79 94.33 56.79 94.33 36.05 167.56 36.05 167.56 56.79 144.32 56.79 144.32 115.4 117.57 115.4 117.57 56.79"/>
+        <polygon fill="#12284c" points="252.69 36.04 252.69 115.4 225.94 115.4 225.94 86.15 201.23 86.15 201.23 115.4 174.47 115.4 174.47 36.04 201.23 36.04 201.23 64.16 225.94 64.16 225.94 36.04 252.69 36.04"/>
+        <polygon fill="#12284c" points="343.83 36.04 343.83 115.4 321.84 115.4 291.69 79.35 291.69 115.4 265.61 115.4 265.61 36.04 287.61 36.04 317.76 72.09 317.76 36.04 343.83 36.04"/>
+        <rect fill="#12284c" x="356.75" y="36.05" width="26.75" height="79.35"/>
+        <polygon fill="#12284c" points="475.51 36.04 447.85 75.38 476.53 115.4 446.42 115.4 417.74 75.38 445.4 36.04 475.51 36.04"/>
+        <polyline fill="#001e31" points="447.85 75.38 476.53 115.4 446.42 115.4 417.74 75.38"/>
+        <polygon fill="#ee7623" points="447.86 75.38 419.17 115.4 389.06 115.4 417.74 75.38 447.86 75.38"/>
+        <polygon fill="#df6a2e" points="417.74 75.38 375.33 15.07 420.19 36.04 447.86 75.38 417.74 75.38"/>
+        <polygon fill="#185a7d" points="50.35 84.79 83.9 84.79 83.9 74.91 24.05 74.91 24.05 115.4 90.02 115.4 90.02 95.22 50.35 95.22 50.35 84.79"/>
+        <rect fill="#185a7d" x="117.57" y="74.91" width="26.75" height="40.48"/>
+        <polygon fill="#185a7d" points="174.47 74.92 174.47 115.4 201.23 115.4 201.23 86.15 225.94 86.15 225.94 115.4 252.69 115.4 252.69 74.92 174.47 74.92"/>
+        <polygon fill="#185a7d" points="265.61 74.92 265.61 115.4 291.69 115.4 291.69 79.35 321.84 115.4 343.83 115.4 343.83 74.92 265.61 74.92"/>
+        <rect fill="#185a7d" x="356.75" y="74.91" width="26.75" height="40.48"/>
+        <rect fill="#ee7623" x="24.05" y="111.84" width="65.98" height="3.55"/>
+        <rect fill="#ee7623" x="117.57" y="111.84" width="26.75" height="3.55"/>
+        <rect fill="#ee7623" x="225.94" y="111.84" width="26.75" height="3.55"/>
+        <rect fill="#ee7623" x="174.47" y="111.84" width="26.75" height="3.55"/>
+        <polygon fill="#ee7623" points="318.87 111.84 321.84 115.4 343.83 115.4 343.83 111.84 318.87 111.84"/>
+        <rect fill="#ee7623" x="265.61" y="111.84" width="26.07" height="3.55"/>
+        <rect fill="#ee7623" x="356.75" y="111.84" width="26.75" height="3.55"/>
+      </svg>
+    </a>
+    <a class="site-link" href="https://ethnixgroup.com/">ethnixgroup.com</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow" id="hero-eyebrow">Ethnix Group &mdash; Applications</span>
+    <h1>Privacy Policy</h1>
+    <div class="meta" id="hero-meta"><strong>Ethnix Group LLC</strong> &nbsp;&middot;&nbsp; Privacy policies for our mobile applications</div>
+  </div>
+</div>
+
+<main class="page">
+
+  <!-- ============ INDEX VIEW: app selector ============ -->
+  <section id="view-index" class="card">
+    <p>Ethnix Group LLC publishes mobile applications to support its logistics, commercialization, and business operations. Select an application below to view its privacy policy.</p>
+    <div class="app-list">
+      <a class="app-card" href="#myethnix">
+        <span class="app-icon app-icon--myethnix" role="img" aria-label="MyEthnix app icon"></span>
+        <span>
+          <span class="app-name">MyEthnix</span>
+          <span class="app-desc">Warehouse Management App</span>
+        </span>
+        <span class="chevron">&rsaquo;</span>
+      </a>
+      <!--
+        To add a new app: copy an <a class="app-card"> block above (href="#your-app-id"),
+        then copy a <section class="policy-view card" id="policy-your-app-id"> block below.
+        No other changes needed — navigation is handled automatically by the hash router.
+      -->
+    </div>
+  </section>
+
+  <!-- ============ POLICY: MyEthnix ============ -->
+  <section id="policy-myethnix" class="policy-view card hidden" data-app-name="MyEthnix" data-app-tagline="Warehouse Management App">
+    <a class="back-link" href="#">&larr; All applications</a>
+    <div class="policy-head">
+      <span class="app-icon app-icon--myethnix" role="img" aria-label="MyEthnix app icon"></span>
+      <div>
+        <h1 class="policy-title">MyEthnix Privacy Policy</h1>
+        <p class="policy-date">Effective date: August 14, 2026</p>
+      </div>
+    </div>
+
+    <div class="glance">
+      <div><strong>Internal use only</strong> MyEthnix is a work tool for Ethnix Group employees and authorized partners.</div>
+      <div><strong>No advertising</strong> We never use your data for ads or marketing.</div>
+      <div><strong>No tracking</strong> We do not track you across other apps or websites.</div>
+      <div><strong>Never sold</strong> Your personal information is never sold to third parties.</div>
+    </div>
+
+    <p>This Privacy Policy describes how Ethnix Group LLC ("Ethnix Group", "we", "us") collects, uses, and protects personal information in connection with the <strong>MyEthnix</strong> mobile application (the "App"). The App is a warehouse management tool intended exclusively for Ethnix Group employees and authorized business partners, and requires a company-issued account.</p>
+
+    <h2><span class="num">1.</span>Information We Collect</h2>
+    <p>We collect only what our warehouse and logistics workflows require:</p>
+    <ul>
+      <li><strong>Account information:</strong> your name, username, and role within the organization, as registered in our warehouse management system.</li>
+      <li><strong>Authentication data:</strong> the credentials you use to sign in. Passwords are transmitted securely and never stored in plain text on the device.</li>
+      <li><strong>Operational content:</strong> photos you capture to document truck loading and related warehouse operations, along with the barcodes and records you scan or process.</li>
+      <li><strong>Activity records:</strong> actions performed in the App (route assignments, pallet movements, label printing, authorizations), associated with your account for operational traceability.</li>
+    </ul>
+    <p>The App does <strong>not</strong> collect your precise location, contacts, health data, financial information, or browsing history.</p>
+
+    <h2><span class="num">2.</span>How We Use Information</h2>
+    <p>Information collected through the App is used solely to:</p>
+    <ul>
+      <li>Authenticate you and apply role-based permissions;</li>
+      <li>Operate warehouse workflows such as routing, staging, pallet consolidation, truck loading, and label printing;</li>
+      <li>Maintain operational and audit records of warehouse activity;</li>
+      <li>Provide technical support and keep our systems secure.</li>
+    </ul>
+
+    <h2><span class="num">3.</span>Device Permissions</h2>
+    <p>The App requests the following permissions, each tied to a specific feature:</p>
+    <ul>
+      <li><strong>Camera:</strong> to scan barcodes and photograph truck loading.</li>
+      <li><strong>Photo library:</strong> to attach or save photos related to loading documentation.</li>
+      <li><strong>Bluetooth:</strong> to connect to thermal label printers in the warehouse.</li>
+    </ul>
+    <p>You can revoke any permission in your device settings at any time; the related feature will stop working, but the rest of the App remains usable.</p>
+
+    <h2><span class="num">4.</span>Data Sharing</h2>
+    <p>Personal information is processed within Ethnix Group systems and by service providers that host our infrastructure under contractual confidentiality obligations. We may disclose information when required by law or to protect the rights, safety, or property of Ethnix Group, its employees, or partners. We never share personal information with third parties for their own marketing purposes.</p>
+
+    <h2><span class="num">5.</span>Data Security and Retention</h2>
+    <p>Data travels between the App and our servers over encrypted connections (HTTPS/TLS), and access to operational data is restricted by role-based permissions. We retain operational records for as long as needed to meet business, legal, and audit requirements; account data is deactivated when your relationship with Ethnix Group ends.</p>
+
+    <h2><span class="num">6.</span>Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the right to access, correct, or request deletion of your personal information. Because the App is provided in the context of an employment or business relationship, some records may need to be retained to comply with legal or contractual obligations. To exercise your rights, contact us using the details below.</p>
+
+    <h2><span class="num">7.</span>Children's Privacy</h2>
+    <p>The App is a business tool and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2><span class="num">8.</span>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be communicated through the App or internal company channels, and the effective date above will be revised accordingly.</p>
+
+    <h2><span class="num">9.</span>Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or how your information is handled, reach out through the contact form on our website:</p>
+    <div class="contact-box">
+      <p><strong>Ethnix Group LLC</strong><br>
+      Contact: <a href="https://ethnixgroup.com/#get-in-touch">ethnixgroup.com &mdash; Get in touch</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 Ethnix Group LLC. All rights reserved.</span>
+    <a href="https://ethnixgroup.com/">ethnixgroup.com</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var indexView = document.getElementById('view-index');
+    var heroEyebrow = document.getElementById('hero-eyebrow');
+    var heroMeta = document.getElementById('hero-meta');
+    var defaultEyebrow = heroEyebrow.innerHTML;
+    var defaultMeta = heroMeta.innerHTML;
+    var policies = document.querySelectorAll('.policy-view');
+
+    function render() {
+      var id = window.location.hash.replace(/^#\/?/, '');
+      var target = id ? document.getElementById('policy-' + id) : null;
+
+      policies.forEach(function (p) { p.classList.add('hidden'); });
+
+      if (target) {
+        indexView.classList.add('hidden');
+        target.classList.remove('hidden');
+        heroEyebrow.textContent = 'Ethnix Group — ' + (target.dataset.appTagline || 'Application');
+        heroMeta.innerHTML = '<strong>' + target.dataset.appName + '</strong>';
+        document.title = target.dataset.appName + ' Privacy Policy — Ethnix Group';
+      } else {
+        indexView.classList.remove('hidden');
+        heroEyebrow.innerHTML = defaultEyebrow;
+        heroMeta.innerHTML = defaultMeta;
+        document.title = 'Privacy Policy — Ethnix Group';
+      }
+      window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', render);
+    render();
+  })();
+</script>
+
+</body>
+</html>
