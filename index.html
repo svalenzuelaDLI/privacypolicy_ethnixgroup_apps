@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Ethnix Group</title>
-<meta name="description" content="Privacy policies for mobile applications by Ethnix Group LLC.">
+<meta name="description" content="Privacy policies for the mobile applications and SMS program of Ethnix Group LLC, a Motion Logistics company.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -224,6 +224,52 @@
   }
   .contact-box p { margin: 0; }
 
+  /* Section label on index view */
+  .group-label {
+    color: var(--navy-deep);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 36px 0 0;
+  }
+  .group-label:first-of-type { margin-top: 28px; }
+
+  /* SMS program icon */
+  .app-icon--sms {
+    background-color: var(--navy-deep);
+    background-size: 60%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ec7700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+  }
+
+  /* SMS documents */
+  .related { font-size: 0.92rem; margin: -18px 0 28px; }
+  .callout {
+    background: #fbf5ee;
+    border-left: 4px solid var(--orange);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    margin: 16px 0 20px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .summary { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 0.95rem; }
+  .summary th, .summary td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid #edebeb; }
+  .summary th { width: 36%; color: var(--navy-deep); font-weight: 600; }
+  .sample {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88rem;
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 6px 0 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  @media (max-width: 640px) {
+    .summary th, .summary td { display: block; width: 100%; padding: 4px 0; border: 0; }
+    .summary tr { display: block; padding: 10px 0; border-bottom: 1px solid #edebeb; }
+  }
+
   /* Footer */
   footer { background: var(--ink); color: #9aa3b2; margin-top: auto; }
   .footer-inner {
@@ -287,8 +333,8 @@
 <div class="hero">
   <div class="hero-inner">
     <span class="eyebrow" id="hero-eyebrow">Ethnix Group &mdash; Applications</span>
-    <h1>Privacy Policy</h1>
-    <div class="meta" id="hero-meta"><strong>Ethnix Group LLC</strong> &nbsp;&middot;&nbsp; Privacy policies for our mobile applications</div>
+    <h1 id="hero-title">Privacy Policy</h1>
+    <div class="meta" id="hero-meta"><strong>Ethnix Group LLC</strong> &nbsp;&middot;&nbsp; Privacy policies for our applications and messaging program</div>
   </div>
 </div>
 
@@ -296,7 +342,8 @@
 
   <!-- ============ INDEX VIEW: app selector ============ -->
   <section id="view-index" class="card">
-    <p>Ethnix Group LLC publishes mobile applications to support its logistics, commercialization, and business operations. Select an application below to view its privacy policy.</p>
+    <p>Ethnix Group LLC, a Motion Logistics company, publishes mobile applications to support its logistics, commercialization, and business operations, and operates a text message program to verify customer phone numbers. Select a document below to view it.</p>
+    <h2 class="group-label" style="border:0;padding:0">Mobile Applications</h2>
     <div class="app-list">
       <a class="app-card" href="#myethnix">
         <span class="app-icon app-icon--myethnix" role="img" aria-label="MyEthnix app icon"></span>
@@ -311,6 +358,25 @@
         then copy a <section class="policy-view card" id="policy-your-app-id"> block below.
         No other changes needed — navigation is handled automatically by the hash router.
       -->
+    </div>
+    <h2 class="group-label" style="border:0;padding:0">SMS Messaging Program</h2>
+    <div class="app-list">
+      <a class="app-card" href="#sms-privacy">
+        <span class="app-icon app-icon--sms" role="img" aria-label="SMS program icon"></span>
+        <span>
+          <span class="app-name">SMS Privacy Policy</span>
+          <span class="app-desc">Ethnix Group Phone Verification</span>
+        </span>
+        <span class="chevron">&rsaquo;</span>
+      </a>
+      <a class="app-card" href="#sms-terms">
+        <span class="app-icon app-icon--sms" role="img" aria-label="SMS program icon"></span>
+        <span>
+          <span class="app-name">SMS Terms and Conditions</span>
+          <span class="app-desc">Ethnix Group Phone Verification</span>
+        </span>
+        <span class="chevron">&rsaquo;</span>
+      </a>
     </div>
   </section>
 
@@ -332,7 +398,7 @@
       <div><strong>Never sold</strong> Your personal information is never sold to third parties.</div>
     </div>
 
-    <p>This Privacy Policy describes how Ethnix Group LLC ("Ethnix Group", "we", "us") collects, uses, and protects personal information in connection with the <strong>MyEthnix</strong> mobile application (the "App"). The App is a warehouse management tool intended exclusively for Ethnix Group employees and authorized business partners, and requires a company-issued account.</p>
+    <p>This Privacy Policy describes how Ethnix Group LLC, a Motion Logistics company ("Ethnix Group", "we", "us"), collects, uses, and protects personal information in connection with the <strong>MyEthnix</strong> mobile application (the "App"). The App is a warehouse management tool intended exclusively for Ethnix Group employees and authorized business partners, and requires a company-issued account.</p>
 
     <h2><span class="num">1.</span>Information We Collect</h2>
     <p>We collect only what our warehouse and logistics workflows require:</p>
@@ -380,16 +446,192 @@
     <h2><span class="num">9.</span>Contact Us</h2>
     <p>If you have questions about this Privacy Policy or how your information is handled, reach out through the contact form on our website:</p>
     <div class="contact-box">
-      <p><strong>Ethnix Group LLC</strong><br>
+      <p><strong>Ethnix Group LLC, a Motion Logistics company</strong><br>
       Contact: <a href="https://ethnixgroup.com/#get-in-touch">ethnixgroup.com &mdash; Get in touch</a></p>
     </div>
   </section>
 
+  <!-- ============ SMS: SMS Privacy Policy ============ -->
+  <section id="policy-sms-privacy" class="policy-view card hidden" data-app-name="Ethnix Group Phone Verification" data-app-tagline="SMS Messaging Program" data-hero-title="SMS Privacy Policy" data-page-title="SMS Privacy Policy — Ethnix Group">
+    <a class="back-link" href="#">&larr; All documents</a>
+    <div class="policy-head">
+      <span class="app-icon app-icon--sms" role="img" aria-label="SMS program icon"></span>
+      <div>
+        <h1 class="policy-title">SMS Privacy Policy</h1>
+        <p class="policy-date">Ethnix Group Phone Verification &middot; Last updated: September 22, 2026</p>
+      </div>
+    </div>
+    <p class="related">See also: <a href="#sms-terms">SMS Terms and Conditions</a></p>
+
+    <p>This SMS Privacy Policy explains how Motion Logistics, doing business as Ethnix Group ("Ethnix Group", "we", "us", or "our"), collects, uses, retains, and protects information in connection with the <strong>Ethnix Group Phone Verification</strong> text messaging program (the "Program").</p>
+    <p>The Program has a single purpose: to send a one-time verification code to a customer's mobile phone so that we can confirm the phone number is correct and belongs to the customer. The Program does not send marketing, promotional, or recurring messages. This policy applies only to the Program and is separate from any other privacy policy published by Ethnix Group.</p>
+
+    <h2><span class="num">1.</span>Information We Collect</h2>
+    <p>When you take part in the Program, we collect only the following information:</p>
+    <ul>
+      <li><strong>Mobile phone number:</strong> the number you provide verbally to an Ethnix Group agent during the delivery process.</li>
+      <li><strong>Consent record:</strong> a record that the consent notice was read to you and that you verbally agreed to receive the verification text message, including the agent who recorded it.</li>
+      <li><strong>Verification timestamp:</strong> the date and time the verification code was sent and the date and time the number was confirmed.</li>
+    </ul>
+    <p>We do not collect the content of any other messages on your device, your contacts, or your location through the Program.</p>
+
+    <h2><span class="num">2.</span>How We Use This Information</h2>
+    <p>We use the information described above only to:</p>
+    <ul>
+      <li>Send the one-time verification code to your mobile phone number;</li>
+      <li>Confirm that the mobile phone number you provided is correct and belongs to you;</li>
+      <li>Keep a record of your consent and of the verification, as required to comply with applicable law and carrier requirements;</li>
+      <li>Process opt-out (STOP) and help (HELP) requests.</li>
+    </ul>
+    <p>We do not use this information to send marketing or promotional messages, and we do not use it for any purpose other than those listed above.</p>
+
+    <h2><span class="num">3.</span>Sharing of Information</h2>
+    <div class="callout">
+      <p><strong>No mobile information will be sold or shared with third parties or affiliates for promotional or marketing purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</strong></p>
+    </div>
+    <p>Your text messaging consent and opt-in data are never shared with third parties or affiliates for marketing or promotional purposes.</p>
+    <p>To deliver verification messages, your mobile phone number and the message content are processed by the SMS service provider and wireless carriers that transmit the message. These providers act only on our behalf, only to deliver the message, and may not use your information for any other purpose. We may also disclose information when required by law, subpoena, or court order.</p>
+
+    <h2><span class="num">4.</span>Data Retention</h2>
+    <ul>
+      <li><strong>Verification codes</strong> are single-use and expire shortly after they are sent. They are not kept after they expire or are used.</li>
+      <li><strong>Mobile phone number, consent record, and verification timestamp</strong> are kept only for as long as needed to confirm your phone number and to demonstrate that consent was obtained, as required by applicable law and carrier requirements. They are deleted once they are no longer needed for these purposes, or sooner if you request deletion (see Section 7).</li>
+      <li><strong>Opt-out records</strong> are kept for as long as needed to make sure we do not send further messages to a number that has opted out.</li>
+    </ul>
+
+    <h2><span class="num">5.</span>Data Security</h2>
+    <p>We protect Program information with reasonable administrative, technical, and physical safeguards. Information is transmitted over encrypted connections, and access is limited to personnel and service providers who need it to operate the Program.</p>
+
+    <h2><span class="num">6.</span>Opting Out</h2>
+    <p>You can stop receiving text messages from the Program at any time by replying <strong>STOP</strong> to any message. After you reply STOP, you will receive one final message confirming that you have been unsubscribed, and no further messages will be sent. For help, reply <strong>HELP</strong> or contact us using the details below. See our <a href="#sms-terms">SMS Terms and Conditions</a> for all supported keywords.</p>
+
+    <h2><span class="num">7.</span>Requesting Deletion of Your Data</h2>
+    <p>You may ask us to delete the mobile phone number and verification records associated with the Program by emailing <a href="mailto:info@ethnixgroup.com?subject=SMS%20data%20deletion%20request">info@ethnixgroup.com</a> with the subject line "SMS data deletion request" or by calling <a href="tel:+16159862376">(615) 986-2376</a>. Please include the mobile phone number you want removed. We may contact you to confirm the request comes from the owner of that number.</p>
+    <p>We will respond within 30 days. If we must keep a limited record by law (for example, a record that the number has opted out so that we do not message it again), we will tell you and keep only what is required.</p>
+
+    <h2><span class="num">8.</span>Children's Privacy</h2>
+    <p>The Program is not directed to children under 13, and we do not knowingly collect information from children through the Program.</p>
+
+    <h2><span class="num">9.</span>Changes to This Policy</h2>
+    <p>We may update this SMS Privacy Policy from time to time. Changes take effect when posted on this page, and the "Last updated" date will be revised accordingly.</p>
+
+    <h2><span class="num">10.</span>Contact Us</h2>
+    <p>If you have questions about this SMS Privacy Policy or the Program, contact us:</p>
+    <div class="contact-box">
+      <p><strong>Motion Logistics, doing business as Ethnix Group</strong><br>
+      1188 Antioch Pike, Nashville, TN 37211<br>
+      Email: <a href="mailto:info@ethnixgroup.com">info@ethnixgroup.com</a><br>
+      Phone: <a href="tel:+16159862376">(615) 986-2376</a><br>
+      Website: <a href="https://ethnixgroup.com/">ethnixgroup.com</a></p>
+    </div>
+
+    
+  </section>
+
+  <!-- ============ SMS: SMS Terms and Conditions ============ -->
+  <section id="policy-sms-terms" class="policy-view card hidden" data-app-name="Ethnix Group Phone Verification" data-app-tagline="SMS Messaging Program" data-hero-title="SMS Terms and Conditions" data-page-title="SMS Terms and Conditions — Ethnix Group">
+    <a class="back-link" href="#">&larr; All documents</a>
+    <div class="policy-head">
+      <span class="app-icon app-icon--sms" role="img" aria-label="SMS program icon"></span>
+      <div>
+        <h1 class="policy-title">SMS Terms and Conditions</h1>
+        <p class="policy-date">Ethnix Group Phone Verification &middot; Last updated: September 22, 2026</p>
+      </div>
+    </div>
+    <p class="related">See also: <a href="#sms-privacy">SMS Privacy Policy</a></p>
+
+    <p>These SMS Terms and Conditions ("Terms") govern the <strong>Ethnix Group Phone Verification</strong> text messaging program (the "Program"), operated by <strong>Motion Logistics, doing business as Ethnix Group</strong> ("Ethnix Group", "we", "us", or "our"). By agreeing to receive a verification text message, you agree to these Terms.</p>
+
+    <div class="callout">
+      <p><strong>Reply STOP to opt out. Reply HELP for help.</strong></p>
+      <p>Message and data rates may apply. One message per verification request.</p>
+    </div>
+
+    <h2><span class="num">1.</span>Program Summary</h2>
+    <table class="summary">
+      <tbody>
+        <tr><th scope="row">Program name</th><td>Ethnix Group Phone Verification</td></tr>
+        <tr><th scope="row">Operated by</th><td>Motion Logistics, doing business as Ethnix Group</td></tr>
+        <tr><th scope="row">Purpose</th><td>One-time verification codes to confirm a customer's mobile phone number</td></tr>
+        <tr><th scope="row">Message frequency</th><td>One message per verification request.</td></tr>
+        <tr><th scope="row">Cost</th><td>Message and data rates may apply.</td></tr>
+        <tr><th scope="row">Opt out</th><td><strong>Reply STOP to opt out.</strong></td></tr>
+        <tr><th scope="row">Help</th><td><strong>Reply HELP for help.</strong> Or contact <a href="mailto:info@ethnixgroup.com">info@ethnixgroup.com</a> / <a href="tel:+16159862376">(615) 986-2376</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2><span class="num">2.</span>Program Description</h2>
+    <p>The Program sends a text message containing a one-time verification code to the mobile phone number a customer provides during the delivery process. The customer reads the code back to the Ethnix Group agent, which confirms that the phone number was entered correctly and belongs to the customer.</p>
+    <p>The Program is used only for phone number verification. It does not send marketing, promotional, or recurring messages. Each code is valid for a single use and expires shortly after it is sent.</p>
+    <p>Example message (the code shown is illustrative):</p>
+    <p class="sample">Ethnix Group: Your verification code is 000000. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out.</p>
+
+    <h2><span class="num">3.</span>How Consent Is Obtained</h2>
+    <p>Consent is obtained verbally, in the presence of an Ethnix Group agent, during the delivery process:</p>
+    <ul>
+      <li>The customer provides their mobile phone number verbally to an Ethnix Group agent.</li>
+      <li>Before entering the number, the agent reads the following consent notice to the customer:
+        <p class="sample">"To verify your phone number, Ethnix Group will send you one text message with a verification code. Message and data rates may apply. Reply STOP to opt out or HELP for help. Agreeing is not required to receive your delivery. Do you agree to receive this text message?"</p>
+      </li>
+      <li>Only after the customer verbally agrees does the agent enter the number in our internal application, which sends a single one-time code.</li>
+      <li>The customer reads the code back to the agent to complete the verification.</li>
+    </ul>
+    <p>A record of the consent and the date and time of the verification are stored as described in our <a href="#sms-privacy">SMS Privacy Policy</a>.</p>
+
+    <h2><span class="num">4.</span>Consent Is Not a Condition of Purchase</h2>
+    <p>Consent to receive text messages from the Program is <strong>not a condition of purchase</strong> and is <strong>not required to receive delivery services</strong> from Ethnix Group. If you do not want to receive a verification text message, tell the agent, and your delivery will proceed.</p>
+
+    <h2><span class="num">5.</span>Message Frequency and Cost</h2>
+    <p>One message per verification request. You will receive a message only when an agent starts a verification request with your consent.</p>
+    <p>Message and data rates may apply. Charges depend on your mobile plan; contact your wireless carrier for details. Ethnix Group does not charge for Program messages.</p>
+
+    <h2><span class="num">6.</span>How to Opt Out</h2>
+    <p><strong>Reply STOP to opt out. Reply HELP for help.</strong></p>
+    <p>You can opt out at any time by replying to any Program message with one of the following keywords:</p>
+    <ul>
+      <li><strong>STOP</strong>, <strong>UNSUBSCRIBE</strong>, <strong>CANCEL</strong>, <strong>END</strong>, or <strong>QUIT</strong></li>
+    </ul>
+    <p>After you opt out, you will receive one final message confirming that you have been unsubscribed, and you will not receive any further messages from the Program. Example confirmation:</p>
+    <p class="sample">Ethnix Group: You have been unsubscribed and will receive no further messages. Reply START to resubscribe.</p>
+
+    <h2><span class="num">7.</span>How to Opt Back In</h2>
+    <p>If you opted out and want to receive verification messages again, reply <strong>START</strong> or <strong>UNSTOP</strong>. You will receive a confirmation message. A verification code is sent only when an agent starts a new verification request with your consent.</p>
+
+    <h2><span class="num">8.</span>How to Get Help</h2>
+    <p>Reply <strong>HELP</strong>, <strong>INFO</strong>, or <strong>SUPPORT</strong> to any Program message to receive help information. Example help response:</p>
+    <p class="sample">Ethnix Group Phone Verification: For help, email info@ethnixgroup.com or call (615) 986-2376. Msg &amp; data rates may apply. Reply STOP to opt out.</p>
+    <p>You can also contact customer support directly:</p>
+    <ul>
+      <li>Email: <a href="mailto:info@ethnixgroup.com">info@ethnixgroup.com</a></li>
+      <li>Phone: <a href="tel:+16159862376">(615) 986-2376</a></li>
+    </ul>
+
+    <h2><span class="num">9.</span>Supported Carriers</h2>
+    <p>The Program is available on major U.S. wireless carriers, including AT&amp;T, T-Mobile, and Verizon Wireless, as well as many regional and prepaid carriers. Carrier availability may vary and is subject to change without notice. Not all mobile devices or plans may be supported.</p>
+    <p>Carriers are not liable for delayed or undelivered messages.</p>
+
+    <h2><span class="num">10.</span>Privacy</h2>
+    <p>Your privacy matters to us. Please read our <a href="#sms-privacy">SMS Privacy Policy</a> to learn what information we collect through the Program, how we use it, and how long we keep it. No mobile information will be sold or shared with third parties or affiliates for promotional or marketing purposes.</p>
+
+    <h2><span class="num">11.</span>Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Changes take effect when posted on this page, and the "Last updated" date will be revised accordingly.</p>
+
+    <h2><span class="num">12.</span>Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>Motion Logistics, doing business as Ethnix Group</strong><br>
+      1188 Antioch Pike, Nashville, TN 37211<br>
+      Email: <a href="mailto:info@ethnixgroup.com">info@ethnixgroup.com</a><br>
+      Phone: <a href="tel:+16159862376">(615) 986-2376</a><br>
+      Website: <a href="https://ethnixgroup.com/">ethnixgroup.com</a></p>
+    </div>
+
+    
+  </section>
 </main>
 
 <footer>
   <div class="footer-inner">
-    <span>&copy; 2026 Ethnix Group LLC. All rights reserved.</span>
+    <span>&copy; 2026 Ethnix Group LLC, a Motion Logistics company. All rights reserved.</span>
     <a href="https://ethnixgroup.com/">ethnixgroup.com</a>
   </div>
 </footer>
@@ -399,8 +641,10 @@
     var indexView = document.getElementById('view-index');
     var heroEyebrow = document.getElementById('hero-eyebrow');
     var heroMeta = document.getElementById('hero-meta');
+    var heroTitle = document.getElementById('hero-title');
     var defaultEyebrow = heroEyebrow.innerHTML;
     var defaultMeta = heroMeta.innerHTML;
+    var defaultTitle = heroTitle.textContent;
     var policies = document.querySelectorAll('.policy-view');
 
     function render() {
@@ -414,11 +658,13 @@
         target.classList.remove('hidden');
         heroEyebrow.textContent = 'Ethnix Group — ' + (target.dataset.appTagline || 'Application');
         heroMeta.innerHTML = '<strong>' + target.dataset.appName + '</strong>';
-        document.title = target.dataset.appName + ' Privacy Policy — Ethnix Group';
+        heroTitle.textContent = target.dataset.heroTitle || defaultTitle;
+        document.title = target.dataset.pageTitle || (target.dataset.appName + ' Privacy Policy — Ethnix Group');
       } else {
         indexView.classList.remove('hidden');
         heroEyebrow.innerHTML = defaultEyebrow;
         heroMeta.innerHTML = defaultMeta;
+        heroTitle.textContent = defaultTitle;
         document.title = 'Privacy Policy — Ethnix Group';
       }
       window.scrollTo(0, 0);
